@@ -1,0 +1,43 @@
+*{
+  margin:0;
+}
+/*police*/
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+}
+.manrope{
+  font-family: "Manrope", sans-serif;
+}
+/*liens*/
+a{
+  text-decoration: none;
+  color:black;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+}
+/*menu nav*/
+.lien_nav:hover{
+  text-decoration: underline;
+}
+.lien_nav{
+  display: inline-block;
+  width:150px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.nav_bloc_droit{
+width: 70%;
+text-align: right;
+}
+.foot_bloc_droit{
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
