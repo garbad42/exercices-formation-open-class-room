@@ -8,6 +8,37 @@
 .manrope{
   font-family: "Manrope", sans-serif;
 }
+/*définitions générales*/
+h1,h2{
+  font-family:"Manrope", sans-serif;
+}
+h1{
+  font-size: 40px;
+  color:rgb(113, 178, 204);
+  text-align: center;
+  padding: 5%;
+}
+h2{
+  color:white;
+  text-align: center;
+  width: 50%;
+  padding: 15px;
+  margin-left: 20%;
+}
+p{
+  font-family:"Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  width: 50%;
+  padding: 15px;
+  margin-left: 20%;
+  text-align: center;
+}
+strong{
+  color: rgb(113, 178, 204);
+}
+
 /*liens*/
 a{
   text-decoration: none;
@@ -15,25 +46,30 @@ a{
   font-family: "Montserrat", sans-serif;
   font-size: large;
 }
+
 /*menu nav*/
 .lien_nav:hover{
   text-decoration: underline;
 }
 .lien_nav{
   display: inline-block;
-  width:150px;
+  width:15%;
   padding: 5px;
   margin-top: 5px;
   font-size: 16px;
+  text-align: center;
 }
 nav{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 2%;
   margin-right: 2%;
+  height:80px;
+  padding: 10px 2px 5px 2px;
 }
 .nav_bloc_droit{
-width: 70%;
+width: 80%;
 text-align: right;
 }
 .foot_bloc_droit{
@@ -41,6 +77,70 @@ text-align: right;
   display: flex;
   justify-content: space-evenly;
 }
+/*main*/
+.lien_main{
+  display: block;
+  border:1px solid black;
+  border-radius: 20px;
+  width: max-content;
+  padding: 15px;
+  margin-left: 25%;
+  color: white;
+  background: rgb(113, 178, 204);
+  background: linear-gradient(169deg, rgba(113,178,204,1) 0%, rgba(252,70,225,1) 100%); 
+}
+.lien_main:hover{
+  background: rgb(113, 178, 204);
+}
+.index_main{
+  background-color: rgb(27, 14, 138);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.section_1_corps_texte{
+  background-color: rgb(27, 14, 138);
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5%;
+}
+.a_propos_main_tableau{
+    font-family:"Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 15px;
+    width:50%;
+    margin-left: 20%;
+}
+.a_propos_section_1_corps_texte{
+  background-color: rgb(27, 14, 138);
+  padding: 2% 25% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  gap: 5%;
+}
+.a_propos_main_corps_texte p{
+  text-align: left;
+  padding: 5%;
+}
+.a_propos_main_corps_texte{
+  border: 1px solid black;
+  width:50%;
+  margin-left: 25%;
+  padding: 5%;
+}
+p,h2,ul{
+  border: 1px solid black;
+}
+
+
+
+
 /*dimensionnement auto des images portfolio*/
 .grid-paysages img,
 .grid-portraits img {
