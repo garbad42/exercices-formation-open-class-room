@@ -5,6 +5,7 @@
     <meta charset="utf-8" >
     <title>Robbie Lens Photographie-accueil</title>
     <link href="style.css" rel="stylesheet">
+    <link href="formulaire.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,11 +14,11 @@
 
 <body>
     <header >
-        <nav>
+        <nav  id="hautindex">
             <a href="a-propos.html" title="aller à l'accueil"><img src="images/logo.png" alt="logo"></a>
             <div class="nav_bloc_droit">
                 <a class="lien_nav" href="a-propos.html">à propos</a>
-                <a class="lien_nav" href="index.html">accueil</a>
+                <a class="lien_nav" href="index.html#hautindex">accueil</a>
                 <a class="lien_nav" href="portfolio.html">portfolio</a>
             </div>
         </nav>
@@ -30,7 +31,7 @@
                     <br> Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion
                         qui m’anime:
                     <br>capturer l’essence de chaque instant.</p>
-                <a class="lien_main" href="">UN PROJET? ECRIVEZ-MOI</a>
+                <a class="lien_main" href="#projet">UN PROJET? ECRIVEZ-MOI</a>
             </div>
                 <img src="images/robbie-lens.png" alt="portrait avec effet de Robbie Lens">
         </section>
@@ -41,11 +42,60 @@
                 <img src="images/accueil/images en 300x300px/element-1.jpeg" alt="element-1">
                 <img src="images/accueil/images en 300x300px/element-2.jpeg" alt="element-2">
                 <img src="images/accueil/images en 300x300px/element-3.jpeg" alt="element-3">
-    
                 <img src="images/accueil/images en 300x300px/element-4.jpeg" alt="element-4">
                 <img src="images/accueil/images en 300x300px/element-5.jpeg" alt="element-5">
                 <img src="images/accueil/images en 300x300px/element-6.jpeg" alt="element-6">
             </div>
+        </section>
+        <section>
+            <form id="projet" method="get" action="">
+                <h2>Vous avez un projet?</h2>
+                <fieldset>
+                    <legend>votre identité</legend>
+                    <label for="nom*">nom</label><input type="text" id="nom" name="nom" autofocus required>
+                    <label class="pre_nom" for="prenom">prénom</label><input type="text" id="prenom" name="prenom">
+                </fieldset>
+                <fieldset>
+                    <legend>contact (un seul choix possible)</legend>
+                    <ul>
+                        <li>
+                            <label for="partelephone">par téléphone</label><input type="radio" name="contact" id="partelephone" value="partelephone">
+                            <label for="telephone">téléphone</label><input type="tel" id="telephone" name="telephone">
+                        </li>
+                        <br>
+                        <li>A quel moment préférez-vous être contacté?</li>
+                        <li>
+                            <label for="matin">matin</label><input type="checkbox" id="matin" name="matin">
+                            <label for="midi">pause de midi</label><input type="checkbox" id="midi" name="midi">
+                            <label for="apresmidi">après midi</label><input type="checkbox" id="apresmidi" name="apresmidi">
+                            <label for="soir">soirée</label><input type="checkbox" id="soir" name="soir">
+                        </li>
+                        <br>
+                        <li>
+                            <label for="parmail">par mail</label><input type="radio" name="contact" id="parmail" value="parmail">
+                            <label class="email" for="mail">mail</label><input type="email" id="mail" name="mail">
+                        </li>
+                        <br>
+                        <li>
+                            <label for="parcourrier">par courrier</label><input type="radio" name="contact" id="parcourrier" value="parcourrier">
+                            <br>
+                            
+                            <label class="adresse rue" for="rue">rue</label><input type="text" id="rue" name="rue">
+                            <br>
+                            <label class="adresse" for="codepostal">code postal</label><input type="text" id="codepostal" name="codepostal" min="5" max="5">
+                            <br>
+                            <label class="adresse ville" for="ville">ville</label><input type="text" id="ville" name="ville">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>votre message</legend>
+                    <textarea id="message" name="message" cols="70" rows="5"></textarea>
+                    <br>
+                    <button type="submit">envoyer</button>
+                </fieldset>
+                
+            </form>
         </section>
     </main>
     <footer>

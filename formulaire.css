@@ -1,0 +1,63 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  /*police*/
+  .montserrat{
+    font-family: "Montserrat", sans-serif;
+  }
+  .manrope{
+    font-family: "Manrope", sans-serif;
+  }
+  form{
+    background: rgb(238,174,202);
+    padding-bottom: 10px;
+  }
+  form h2{
+    color:black;
+  }
+  fieldset{
+    background-color: aquamarine;
+    width: 40%;
+    padding: 5px;
+    margin: 0 30% 5px 30%;
+  }
+  fieldset li{
+    list-style-type: none;
+  }
+  legend{
+    font-family: "Manrope", sans-serif;
+    font-size: 10px;
+    font-weight:bold;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  input{
+    font-family: "Montserrat", sans-serif;
+    margin-left: 5px;
+  }
+  .adresse,.pre_nom{
+    margin-left: 20px;
+  }
+  .rue{
+    margin-right: 52px;
+  }
+  .ville{
+    margin-right: 44px;
+  }
+  .email{
+    margin-left: 67px;
+  }
+  button{
+    padding: 5px;
+    background-color: rgb(238,174,202);
+    margin-left: 80%;
+    border-radius: 3px;
+  }
+  button:hover{
+    opacity: 0.8;
+  }
+  
