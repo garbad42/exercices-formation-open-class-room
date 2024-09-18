@@ -90,6 +90,7 @@ footer{
   padding: 15px;
   margin-top: 5%;
   color: white;
+  align-self: center;
 }
 .lien_main:hover{
   background: rgb(113, 178, 204);
